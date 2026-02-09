@@ -1,0 +1,80 @@
+/**
+ * Mouse Cursor Styles
+ * Small dot default + bubble on hover
+ */
+
+/* Hide default cursor on desktop */
+body { cursor: none; }
+*, *::before, *::after { cursor: none !important; }
+
+/* ---- Small Dot (default state) ---- */
+#cursor-dot {
+    position: fixed;
+    top: 0; left: 0;
+    width: 10px;
+    height: 10px;
+    background: #ff6b4a;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999999;
+    will-change: transform;
+}
+
+/* ---- Bubble Ring (hover state) ---- */
+#cursor-ring {
+    position: fixed;
+    top: 0; left: 0;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(10, 22, 40, 0.6);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999998;
+    opacity: 0;
+    will-change: transform, width, height, opacity;
+    transition: width 0.3s ease, height 0.3s ease, opacity 0.25s ease, background 0.3s ease;
+    mix-blend-mode: difference;
+    background: transparent;
+}
+
+/* When hovering interactive elements */
+#cursor-ring.is-hover {
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Larger bubble for headings */
+#cursor-ring.is-heading {
+    opacity: 1;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Drag text on swiper */
+#cursor-ring.is-drag {
+    opacity: 1;
+    width: 80px;
+    height: 80px;
+    background: rgba(157, 115, 36, 0.9);
+    mix-blend-mode: normal;
+}
+#cursor-ring.is-drag::after {
+    content: 'Drag';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Hide on touch / mobile */
+@media (hover: none) and (pointer: coarse), (max-width: 768px) {
+    body, *, *::before, *::after { cursor: auto !important; }
+    #cursor-dot, #cursor-ring { display: none !important; }
+}

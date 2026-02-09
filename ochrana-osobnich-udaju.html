@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="description" content="Ochrana osobních údajů – Ali Kebab Ostrava. Informace o zpracování osobních údajů dle GDPR, práva uživatelů, cookies a zabezpečení dat.">
+	<meta name="keywords" content="ali kebab ochrana osobních údajů, GDPR ali kebab, soukromí ali kebab ostrava, zpracování osobních údajů">
+	<meta name="author" content="Ali Kebab Ostrava">
+	<meta name="robots" content="noindex, follow">
+	<link rel="canonical" href="https://alikebab.cz/ochrana-osobnich-udaju.html">
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="cs_CZ">
+	<meta property="og:site_name" content="Ali Kebab Ostrava">
+	<meta property="og:title" content="Ochrana osobních údajů | Ali Kebab Ostrava">
+	<meta property="og:description" content="Informace o zpracování a ochraně vašich osobních údajů dle GDPR.">
+	<meta property="og:url" content="https://alikebab.cz/ochrana-osobnich-udaju.html">
+	<!-- Page Title -->
+	<title>Ochrana osobních údajů | Ali Kebab Ostrava</title>
+	<!-- Favicon Icon -->
+	<link rel="shortcut icon" type="image/png" href="images/cropped-AliKebabOstrava-1-180x180.png">
+	<link rel="icon" type="image/png" sizes="180x180" href="images/cropped-AliKebabOstrava-1-180x180.png">
+	<link rel="apple-touch-icon" href="images/cropped-AliKebabOstrava-1-180x180.png">
+	<!-- Google Fonts Css-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+	<!-- Bootstrap Css -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- SlickNav Css -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" rel="stylesheet">
+	<!-- Font Awesome Icon Css-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+	<!-- Animated Css -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+	<!-- Mouse Cursor Css File -->
+	<link rel="stylesheet" href="css/mousecursor.css">
+	<!-- Main Custom Css -->
+	<link href="css/custom.css" rel="stylesheet" media="screen">
+
+	<style>
+		/* ==========================================
+		   PRIVACY PAGE – Hero Banner
+		   ========================================== */
+		.privacy-page-hero {
+			position: relative;
+			min-height: 350px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			background: var(--primary-color);
+			overflow: hidden;
+		}
+		.privacy-page-hero::after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background: rgba(10,22,40,0.3);
+			z-index: 1;
+		}
+		.privacy-page-hero-content {
+			position: relative;
+			z-index: 2;
+			padding: 40px 20px;
+		}
+		.privacy-page-hero-content h1 {
+			font-family: var(--font-primary);
+			font-size: 56px;
+			font-weight: 800;
+			color: var(--white);
+			margin-bottom: 10px;
+		}
+		.privacy-page-hero-content p {
+			font-family: var(--font-secondary);
+			font-size: 18px;
+			color: rgba(255,255,255,0.85);
+		}
+
+		/* ==========================================
+		   PRIVACY PAGE – Content
+		   ========================================== */
+		.privacy-content {
+			padding: 80px 0 60px;
+		}
+		.privacy-content .privacy-inner {
+			max-width: 860px;
+			margin: 0 auto;
+		}
+		.privacy-content h2 {
+			font-family: var(--font-primary);
+			font-size: 32px;
+			font-weight: 700;
+			color: var(--text-dark);
+			margin-top: 50px;
+			margin-bottom: 18px;
+			padding-bottom: 12px;
+			border-bottom: 2px solid var(--primary-color);
+		}
+		.privacy-content h2:first-child {
+			margin-top: 0;
+		}
+		.privacy-content h3 {
+			font-family: var(--font-primary);
+			font-size: 24px;
+			font-weight: 700;
+			color: var(--text-dark);
+			margin-top: 35px;
+			margin-bottom: 14px;
+		}
+		.privacy-content h4 {
+			font-family: var(--font-primary);
+			font-size: 20px;
+			font-weight: 700;
+			color: var(--primary-color);
+			margin-top: 25px;
+			margin-bottom: 10px;
+		}
+		.privacy-content p {
+			font-family: var(--font-secondary);
+			font-size: 16px;
+			line-height: 1.8;
+			color: #444;
+			margin-bottom: 16px;
+		}
+		.privacy-content ul {
+			padding-left: 24px;
+			margin-bottom: 16px;
+		}
+		.privacy-content ul li {
+			font-family: var(--font-secondary);
+			font-size: 16px;
+			line-height: 1.8;
+			color: #444;
+			margin-bottom: 6px;
+		}
+		.privacy-content .info-box {
+			background: #f8f5ef;
+			border-left: 4px solid var(--primary-color);
+			padding: 24px 28px;
+			border-radius: 8px;
+			margin: 25px 0;
+		}
+		.privacy-content .info-box p {
+			margin-bottom: 0;
+		}
+		.privacy-content .contact-link {
+			color: var(--primary-color);
+			font-weight: 600;
+			text-decoration: none;
+			transition: var(--transition);
+		}
+		.privacy-content .contact-link:hover {
+			color: var(--secondary-color);
+			text-decoration: underline;
+		}
+
+		/* ==========================================
+		   PRIVACY PAGE – CTA
+		   ========================================== */
+		.privacy-cta {
+			background: var(--dark-bg);
+			padding: 60px 0;
+			text-align: center;
+		}
+		.privacy-cta h2 {
+			font-family: var(--font-primary);
+			font-size: 36px;
+			font-weight: 700;
+			color: var(--white);
+			margin-bottom: 15px;
+			border: none;
+			padding-bottom: 0;
+		}
+		.privacy-cta p {
+			font-family: var(--font-secondary);
+			font-size: 18px;
+			color: rgba(255,255,255,0.8);
+			margin-bottom: 30px;
+		}
+
+		@media (max-width: 768px) {
+			.privacy-page-hero { min-height: 260px; }
+			.privacy-page-hero-content h1 { font-size: 36px; }
+			.privacy-content { padding: 50px 0 40px; }
+			.privacy-content h2 { font-size: 26px; margin-top: 35px; }
+			.privacy-content h3 { font-size: 20px; }
+		}
+	</style>
+</head>
+<body>
+	<!-- Preloader Start -->
+	<div class="preloader">
+		<div class="loading-container">
+			<div class="loading"></div>
+			<div id="loading-icon"><img src="images/cropped-AliKebabOstrava-1-180x180.png" alt="Načítání..."></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+
+	<!-- Magic Cursor Start -->
+	<div id="magic-cursor">
+		<div id="ball"></div>
+	</div>
+	<!-- Magic Cursor End -->
+
+	<!-- Header Start -->
+	<header class="main-header">
+		<div class="header-sticky">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<!-- Logo Start -->
+					<a class="navbar-brand" href="./">
+						<img src="images/cropped-AliKebabOstrava-1-180x180.png" alt="Ali Kebab Ostrava">
+					</a>
+					<!-- Logo End -->
+
+					<!-- Main Menu Start -->
+					<div class="collapse navbar-collapse main-menu">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item"><a class="nav-link" href="./">Domů</a></li>
+							<li class="nav-item"><a class="nav-link" href="about-us.html">O nás</a></li>
+							<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+							<li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+							<li class="nav-item"><a class="nav-link active" href="ochrana-osobnich-udaju.html">Ochrana údajů</a></li>
+						</ul>
+					</div>
+					<!-- Main Menu End -->
+					<div class="navbar-toggle"><span></span><span></span><span></span></div>
+				</div>
+			</nav>
+			<!-- Mobile Side Menu -->
+			<div class="responsive-menu">
+				<div class="side-menu-header">
+					<img src="images/cropped-AliKebabOstrava-1-180x180.png" alt="Ali Kebab">
+					<span class="brand-text">Ali Kebab</span>
+				</div>
+				<ul class="side-menu-nav">
+					<li><a href="./"><i class="fa-solid fa-house"></i> Domů</a></li>
+					<li><a href="about-us.html"><i class="fa-solid fa-utensils"></i> O nás</a></li>
+					<li><a href="menu.html"><i class="fa-solid fa-book-open"></i> Menu</a></li>
+					<li><a href="contact.html"><i class="fa-solid fa-location-dot"></i> Kontakt</a></li>
+					<li><a href="ochrana-osobnich-udaju.html" class="active"><i class="fa-solid fa-shield-halved"></i> Ochrana údajů</a></li>
+				</ul>
+				<div class="side-menu-footer">
+					<a href="tel:+420721405452"><i class="fa-solid fa-phone"></i> +420 721 405 452</a>
+					<a href="mailto:alikebabostrava@gmail.com"><i class="fa-solid fa-envelope"></i> alikebabostrava@gmail.com</a>
+					<div class="side-menu-social">
+						<a href="https://www.instagram.com/alikebabostrava/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://www.facebook.com/alikebabostrava/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="menu-overlay"></div>
+		</div>
+	</header>
+	<!-- Header End -->
+
+	<!-- Hero Banner Start -->
+	<section class="privacy-page-hero">
+		<div class="privacy-page-hero-content">
+			<h1 class="wow fadeInUp">Ochrana osobních údajů</h1>
+			<p class="wow fadeInUp" data-wow-delay="0.2s">Informace o zpracování a ochraně vašich osobních údajů</p>
+		</div>
+	</section>
+	<!-- Hero Banner End -->
+
+	<!-- Privacy Content Start -->
+	<section class="privacy-content">
+		<div class="container">
+			<div class="privacy-inner wow fadeInUp">
+
+				<p>Provozovatel těchto webových stránek (dále jen provozovatel), zpracovává osobní údaje uživatelů uvedených stránek v souladu s NAŘÍZENÍ EVROPSKÉHO PARLAMENTU A RADY (EU) 2016/679 ze dne 27. dubna 2016 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů a o zrušení směrnice 95/46/ES (obecné nařízení o ochraně osobních údajů) (dále jen GDPR). Subjektem údajů je každý zákazní fyzická osoba, která využívá služeb těchto internetových stránek.</p>
+
+				<!-- Camera Info -->
+				<div class="info-box">
+					<h4 style="margin-top: 0;"><i class="fas fa-video" style="margin-right: 8px;"></i> Informace o fotoaparátu</h4>
+					<p>Rádi bychom vás informovali, že používáme Tapo Camera, která má vlastní vestavěný software, my osobní vlastník Ali Kebab Ostrava Centrum jej sledujeme pro naši vlastní ochranu a bezpečnost zákazníků. Dle zákona GDPR jsme veškeré informace o videích zcela v bezpečí a nesdílíme je s ostatními pouze se státními úřady na vyžádání, údaje o údajích uchováváme maximálně 15 dní. Pokud potřebujete více informací o videích z fotoaparátu, kontaktujte nás prostřednictvím e-mailu <a href="mailto:alikebabostrava@gmail.com" class="contact-link">alikebabostrava@gmail.com</a> nebo Tel.: <a href="tel:+420702202040" class="contact-link">+420 702 20 20 40</a></p>
+				</div>
+
+				<!-- Neregistrovaný zákazník -->
+				<h2>Neregistrovaný zákazník</h2>
+
+				<h3>Rozsah zpracování</h3>
+				<p>Při objednávce služeb / zboží nabízeným provozovatelem na těchto internetových stránkách mohou být uživatelé vyzváni k zadání osobních údajů:</p>
+
+				<h4>Povinné:</h4>
+				<ul>
+					<li>Křestní jméno</li>
+					<li>Příjmení</li>
+					<li>E-mail</li>
+					<li>Telefon</li>
+				</ul>
+
+				<h4>Nepovinné:</h4>
+				<ul>
+					<li>Poznámky</li>
+				</ul>
+
+				<p>Provozovatel výslovně uvádí, že neshromažďuje a nezpracovává žádné osobní údaje, které mu uživatelé sami dobrovolně neposkytnou. Vkládání veškerých osobních údajů na těchto internetových stránkách je zcela dobrovolné.</p>
+
+				<h3>Účel zpracování</h3>
+				<p>Účelem zpracování osobních údajů je realizace poskytnutí služby. Jedná se jen o nezbytné informace k naplnění předmětu smlouvy / objednávky. Bez těchto údajů není možné smlouvu realizovat / dokončit objednávku. Osobní údaje jsou dále zpracovány jen za účelem vedení účetnictví / daňové evidence provozovatele.</p>
+
+				<h3>Doba zpracování</h3>
+				<p>Doba zpracování osobních údajů je po dobu 3 let od uskutečnění objednávky (promlčecí lhůta).</p>
+
+				<h3>Právní základ zpracování</h3>
+				<p>Osobní údaje Subjektu údajů jsou zpracovány na základě údajů nezbytných k uzavření smlouvy / plnění objednávky. Zákazník (Subjekt údajů) v tomto případě nemusí udělit souhlas se zpracováním osobních údajů.</p>
+
+				<!-- Registrovaný zákazník -->
+				<h2>Registrovaný zákazník</h2>
+
+				<h3>Rozsah zpracování</h3>
+				<p>Při registraci ke službám nabízeným provozovatelem na těchto internetových stránkách mohou být uživatelé vyzváni k zadání osobních údajů:</p>
+
+				<h4>Povinné:</h4>
+				<ul>
+					<li>Křestní jméno</li>
+					<li>Příjmení</li>
+					<li>E-mail</li>
+					<li>Telefon</li>
+				</ul>
+
+				<h4>Nepovinné:</h4>
+				<ul>
+					<li>Doručovací adresu (adresy)</li>
+				</ul>
+
+				<p>Provozovatel výslovně uvádí, že neshromažďuje a nezpracovává žádné osobní údaje, které mu subjekt údajů sám dobrovolně neposkytne. Vkládání veškerých osobních údajů v registraci nebo nastavení služeb je zcela dobrovolné.</p>
+
+				<h3>Účel zpracování</h3>
+				<p>Účelem zpracování osobních údajů je:</p>
+				<ul>
+					<li>Registrace v databázi uživatelů těchto internetových stránek. Registrace umožňuje subjektu údajů editaci účtu, přidávání a odvolávání souhlasů, účastnit se věrnostního / bonusového programu, sledovat historii objednávek.</li>
+					<li>Realizace poskytnutí služby. Jedná se jen o nezbytné informace k naplnění předmětu smlouvy / objednávky.</li>
+					<li>Osobní údaje jsou dále zpracovány jen za účelem vedení účetnictví / daňové evidence provozovatele.</li>
+					<li>Realizace marketingových aktivit, dal-li k nim subjekt údajů souhlas.</li>
+				</ul>
+
+				<p>Všechny osobní údaje, které uživatel (tj. subjekt údajů) provozovateli poskytne, budou v souladu s příslušnými ustanoveními zákona uchovávány a odpovídajícím způsobem chráněny proti zneužití po dobu neurčitou.</p>
+
+				<h3>Doba zpracování</h3>
+				<p>Doba zpracování osobních údajů je po dobu trvání aktivního profilu uživatele. Tzn., do doby odvolání souhlasu, do doby než uživatel smaže svůj profil, nebo takto učiní provozovatel. Po smazání profilu budou údaje uživatele archivovány dle zákonných povinností.</p>
+
+				<h3>Automatizované rozhodování, včetně profilování</h3>
+				<p>Provozovatel může shromažďovat a analyzovat informace, které se týkají používání těchto internetových stránek ze strany uživatelů. Tyto informace mohou být získány pomocí „cookie", malých textových složek, umístěných serverem na hard-disk uživatele. Uživatel je oprávněn v rámci nastavení svého vyhledávače zvolit (ne)povolení „cookie".</p>
+
+				<p>Osobní údaje uživatelů jsou zpracovávány automatizovaně i manuálně a mohou být zpřístupněny pracovníkům provozovatele, zpracovatelům, s nimiž má provozovatel uzavřenu smlouvu o zpracování osobních údajů, případně další fyzické osobě oprávněné podle zákona o ochraně osobních údajů, osobám dle souhlasu subjektu údajů a osobám oprávněným na základě právních předpisů.</p>
+
+				<h3>Právní základ zpracování</h3>
+				<p>Osobní údaje Subjektu údajů jsou zpracovány na základě souhlasu, který uživatel (Subjekt údajů) udělí při registraci na těchto internetových stránkách.</p>
+
+				<h3>Udělení souhlasu</h3>
+				<p>Uživatel uděluje souhlas se zpracováním osobních údajů při první registraci na těchto internetových stránkách.</p>
+
+				<h3>Úprava, editace, omezení zpracování osobních údajů</h3>
+				<p>Rozsah a další možnosti zpracování a nakládání s osobními údaji si registrovaný účastník může po přihlášení určit v sekci Nastavení účtu.</p>
+
+				<h3>Odvolání souhlasu</h3>
+				<p>Odvolání souhlasu provede uživatel po přihlášení ke svému účtu a v sekci Nastavení účtu.</p>
+
+				<!-- Společná ustanovení -->
+				<h2>Společná ustanovení</h2>
+
+				<h3>Předávání třetím osobám</h3>
+				<p>Provozovatel těchto internetových stránek nepředává osobní údaje uživatelů třetím osobám.</p>
+
+				<h3>Předávání do 3. zemí</h3>
+				<p>Provozovatel těchto internetových stránek nepředává osobní údaje uživatelů do 3. zemí.</p>
+
+				<h3>Práva uživatele</h3>
+				<p>Požádá-li subjekt údajů Provozovatele těchto internetových stránek o informaci o zpracování svých osobních údajů, je provozovatel v souladu s GDPR povinen mu tuto informaci bez zbytečného odkladu předat a řídit se ustanovením čl. 16 – 22 NAŘÍZENÍ EVROPSKÉHO PARLAMENTU A RADY (EU) 2016/679. Každý subjekt údajů, který zjistí nebo se domnívá, že provozovatel nebo konkrétní zpracovatel osobních údajů, provádí zpracování jeho osobních údajů, které je v rozporu s ochranou soukromého a osobního života uživatele (subjektu údajů) nebo v rozporu s GDPR, zejména jsou-li osobní údaje nepřesné s ohledem na účel jejich zpracování, může požádat provozovatele nebo konkrétního zpracovatele o vysvětlení a požadovat, aby provozovatel nebo zpracovatel odstranil takto vzniklý stav. Zejména se může jednat o blokování, provedení opravy, doplnění nebo likvidaci osobních údajů.</p>
+
+				<h4>Uživatel (subjekt údajů) má právo:</h4>
+				<ul>
+					<li>svůj souhlas kdykoli odvolat;</li>
+					<li>požadovat od správce přístup k osobním údajům (čl. 15) týkajícím se subjektu údajů, jejich opravu (čl. 16) nebo výmaz (čl. 17), na omezení zpracování (čl. 18), a vznést námitku proti zpracování (čl. 21), jakož i práva na přenositelnost údajů (čl. 20);</li>
+					<li>odvolat kdykoli souhlas, pokud je zpracování založeno na čl. 6 odst. 1 písm. a) nebo čl. 9 odst. 2 písm. a), aniž je tím dotčena zákonnost zpracování založená na souhlasu uděleném před jeho odvoláním;</li>
+					<li>nebýt předmětem žádného rozhodnutí založeného výhradně na automatizovaném zpracování, včetně profilování;</li>
+					<li>podat stížnost u dozorového úřadu.</li>
+				</ul>
+
+				<!-- Závěr -->
+				<h2>Závěr</h2>
+				<p>Provozovatel si vyhrazuje právo na úpravu tohoto prohlášení o ochraně osobních údajů. Z tohoto důvodu je v zájmu uživatelů kontrolovat, zda toto prohlášení nedoznalo změn.</p>
+
+				<!-- Odstranění a anonymizace -->
+				<h2>Odstranění a anonymizace údajů</h2>
+				<p>Uživatel (subjekt údajů) má možnost po přihlášení zadat pokyn k odstranění uživatelského účtu. Pokyn zadá prostřednictvím tlačítka Zrušit účet v sekci Osobní nastavení.</p>
+
+				<h4>Zrušením účtu se rozumí:</h4>
+				<ul>
+					<li>Anonymizace zpracovaných údajů v objednávkách</li>
+					<li>Odstranění všech osobních údajů z databáze</li>
+					<li>Odstranění vazby na službu Facebook a Instagram</li>
+				</ul>
+
+				<div class="info-box" style="margin-top: 40px;">
+					<p><i class="fas fa-envelope" style="margin-right: 8px; color: var(--primary-color);"></i> Pro více informací je možné kontaktovat podporu na e-mailové adrese <a href="mailto:alikebabostrava@gmail.com" class="contact-link">alikebabostrava@gmail.com</a></p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- Privacy Content End -->
+
+	<!-- CTA Section Start -->
+	<section class="privacy-cta">
+		<div class="container">
+			<h2 class="wow fadeInUp">Máte otázky?</h2>
+			<p class="wow fadeInUp" data-wow-delay="0.2s">Neváhejte nás kontaktovat, rádi vám pomůžeme.</p>
+			<a href="contact.html" class="btn-default wow fadeInUp" data-wow-delay="0.3s">Kontaktujte nás</a>
+		</div>
+	</section>
+	<!-- CTA Section End -->
+
+	<!-- Footer Start -->
+	<footer class="main-footer">
+		<div class="container">
+			<div class="footer-bar">
+				<p>&copy; 2025 Ali Kebab. Všechna práva vyhrazena.</p>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer End -->
+
+	<!-- Jquery Library File -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<!-- Bootstrap js file -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- SlickNav js file -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+	<!-- WOW js file -->
+	<!-- GSAP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+	<!-- WOW js file -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<!-- Magic Cursor -->
+	<script src="js/magiccursor.js"></script>
+	<!-- SplitText -->
+	<script src="js/SplitText.js"></script>
+	<!-- Main Custom js file -->
+	<script src="js/function.js"></script>
+</body>
+</html>

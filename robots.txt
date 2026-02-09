@@ -1,0 +1,16 @@
+# robots.txt for alikebab.cz
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://alikebab.cz/sitemap.xml
+
+# Disallow admin/system files
+Disallow: /js/
+Disallow: /css/
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Allow search engines to index images
+User-agent: Googlebot-Image
+Allow: /images/

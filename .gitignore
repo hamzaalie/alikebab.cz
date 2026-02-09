@@ -1,0 +1,10 @@
+# Old WordPress source files (contain secrets)
+source.html
+sourceofalibaba.html
+
+# PDF files
+*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
