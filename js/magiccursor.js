@@ -35,6 +35,7 @@ class MagicCursor {
         document.addEventListener("mousemove", (e) => {
             this.mouseX = e.clientX;
             this.mouseY = e.clientY;
+            this.checkBrandedSection(e.clientX, e.clientY);
         }, { passive: true });
 
         // Hover targets: buttons, links, inputs
@@ -90,6 +91,24 @@ class MagicCursor {
             `translate3d(${this.ringX - rw / 2}px, ${this.ringY - rw / 2}px, 0)`;
 
         requestAnimationFrame(() => this.loop());
+    }
+
+    checkBrandedSection(x, y) {
+        // Detect if cursor is over a section with gold/branded background
+        const el = document.elementFromPoint(x, y);
+        if (!el) return;
+
+        const branded = el.closest(
+            '.menu-branded, .cta-box, .main-footer, .topbar, .partner-card-inner'
+        );
+
+        if (branded) {
+            this.dot.classList.add('cursor-light');
+            this.ring.classList.add('cursor-light');
+        } else {
+            this.dot.classList.remove('cursor-light');
+            this.ring.classList.remove('cursor-light');
+        }
     }
 }
 

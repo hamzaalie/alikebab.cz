@@ -7,14 +7,9 @@
     "use strict";
 
     /* ==========================================
-       PRELOADER
+       PAGE LOAD
        ========================================== */
     $(window).on("load", function () {
-        $(".preloader").addClass("loaded");
-        setTimeout(function () {
-            $(".preloader").fadeOut(300);
-        }, 600);
-
         // Trigger WOW after load
         initWow();
         initCounters();
