@@ -1699,6 +1699,9 @@ textarea.form-control { min-height: 120px; resize: vertical; }
 
 .text-anime-style-3 .split-inner { display: inline-block; }
 
+/* Google Translate fix: ghost text inherits heading styles when revealed */
+.translate-ghost { display: block; }
+
 .wow { visibility: hidden; }
 .wow.animated { visibility: visible; }
 
