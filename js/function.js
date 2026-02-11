@@ -203,8 +203,8 @@
     function initMagnificPopup() {
         if (!$.fn.magnificPopup) return;
 
-        $(".gallery-image").magnificPopup({
-            delegate: "a",
+        $(".gallery-grid").magnificPopup({
+            delegate: "a.gallery-grid-link",
             type: "image",
             gallery: {
                 enabled: true,
