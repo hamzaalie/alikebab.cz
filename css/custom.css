@@ -1050,6 +1050,7 @@ figure { margin: 0; }
     flex-direction: column;
     justify-content: center;
     min-width: 0;
+    text-align: left;
 }
 
 .menu-card-header {
@@ -1058,6 +1059,7 @@ figure { margin: 0; }
     align-items: center;
     gap: 16px;
     margin-bottom: 8px;
+    width: 100%;
 }
 
 .menu-card-header h3 {
@@ -1101,6 +1103,7 @@ figure { margin: 0; }
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
+    text-align: left;
 }
 
 .menu-branded .menu-card-body > p { color: rgba(255,255,255,0.65); }
@@ -1732,11 +1735,17 @@ textarea.form-control { min-height: 120px; resize: vertical; }
     .menu-card {
         flex-direction: column;
         min-height: auto;
+        align-items: stretch;
+        width: 100%;
     }
     .menu-card-img {
         width: 100%;
         min-width: unset;
         height: 200px;
+    }
+    .menu-card-body {
+        text-align: left;
+        width: 100%;
     }
     .menu-card:hover { transform: translateY(-4px); }
     
@@ -1824,6 +1833,8 @@ textarea.form-control { min-height: 120px; resize: vertical; }
         flex-direction: column;
         min-height: auto;
         border-radius: 14px;
+        align-items: stretch;
+        width: 100%;
     }
     .menu-card-img {
         width: 100%;
@@ -1831,8 +1842,10 @@ textarea.form-control { min-height: 120px; resize: vertical; }
         height: 200px;
         border-radius: 14px 14px 0 0;
     }
-    .menu-card-body { padding: 16px; }
-    .menu-card-header h3 { font-size: 16px; }
+    .menu-card-body { padding: 16px; text-align: left; width: 100%; }
+    .menu-card-header { width: 100%; }
+    .menu-card-header h3 { font-size: 16px; text-align: left; }
+    .menu-card-body > p { text-align: left; }
     .menu-price { font-size: 16px; padding: 3px 12px; }
     .menu-card:hover { transform: translateY(-3px); }
     
@@ -1880,8 +1893,10 @@ textarea.form-control { min-height: 120px; resize: vertical; }
     .gallery-grid { grid-template-columns: 1fr; }
     
     .menu-card-img { height: 180px; }
-    .menu-card-body { padding: 14px; }
-    .menu-card-header h3 { font-size: 15px; }
+    .menu-card-body { padding: 14px; text-align: left; width: 100%; }
+    .menu-card-header { width: 100%; }
+    .menu-card-header h3 { font-size: 15px; text-align: left; }
+    .menu-card-body > p { text-align: left; }
     .menu-card-header .menu-price { font-size: 15px; }
     
     .section-title p { font-size: 15px; }
