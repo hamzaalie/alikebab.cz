@@ -467,6 +467,23 @@ figure { margin: 0; }
     position: relative; z-index: 2;
 }
 
+/* Halal Tag */
+.halal-tag {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 3;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
 .hero-subtitle {
     color: rgba(255,255,255,0.85);
     font-size: 20px; font-style: italic;
